@@ -1,4 +1,6 @@
-@font-face {
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700italic,700);
+
+/*@font-face {
   font-family: 'Noto Sans';
   font-weight: 400;
   font-style: normal;
@@ -52,7 +54,7 @@
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff') format('woff'),
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf') format('truetype'),
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
-}
+}*/
 
 body {
   background-color: #fff;
@@ -76,7 +78,10 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:45px;
+  font-weight: normal;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #ec6812;
 }
 
 h2 {
@@ -246,6 +251,49 @@ footer {
   position:fixed;
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
+}
+
+.centered {
+  margin: 0 auto;
+  text-align:center;
+}
+
+.round {
+  border-radius: 9999px;
+}
+
+.avatar {
+  border-radius: 9999px;
+  border: 3px solid #fff;
+}
+
+.quote {
+  padding: 2em;
+  padding-top: 1em;
+}
+
+.quote .body {
+  background: #eee;
+  border-radius: 7px;
+  margin-top: 0.5em;
+  border-bottom-right-radius: 0px;
+  padding: 0.75em;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.quote .title {
+  text-align: right;
+  border-right: 4px solid #eee;
+  border-bottom-right-radius: 10px;
+  margin-left: 1em;
+  padding: 0.5em;
+}
+
+.quote .title .small {
+  line-height: 16px;
+  font-size: 11px;
+  color: #999;
 }
 
 @media print, screen and (max-width: 960px) {
